@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    margin: 20px auto;
+    text-align: center;
+
+    & h1 {
+    font-weight: 400;
+
+    }
+    & a{
+        text-decoration: none;
+        color: black;
+        font-size: 38px;
+    }
+    &
+    a:hover{
+        color: blue;
+    }
+}
+
+.container{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.content{
+    width: 400px;
+
+    & img{
+        border-radius: 12px ;
+    }
+}
+
+footer{
+   text-align: center;
+}
