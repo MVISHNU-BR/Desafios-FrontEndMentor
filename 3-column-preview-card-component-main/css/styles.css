@@ -67,7 +67,8 @@ img{
 .title
 {
     font-family: 'big-shoulders-display', sans-serif;
-    font-size: 20px;
+    font-size: 35px;
+    color: var(--very-light-gray);
 }
 
 button{
