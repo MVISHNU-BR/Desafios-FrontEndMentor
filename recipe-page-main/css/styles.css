@@ -1,0 +1,400 @@
+@font-face {
+  font-family: "Young-Serif-Regular";
+  src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Oufit";
+  src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Oufit-regular";
+  src: url("../assets/fonts/outfit/static/Outfit-Regular.ttf");
+}
+
+:root {
+  --rose-800: #7a284e;
+  --rose-50: #fff7fb;
+  --stone-900: #312e2c;
+  --stone-600: #5f564d;
+  --stone-150: #e3ddd7;
+  --stone-100: #f3e5d7;
+  --brown-800: #854632;
+  --white: #fff;
+}
+
+.text-preset-1 {
+  font-family: "Young-Serif-Regular";
+  letter-spacing: 1px;
+  font-size: 40px;
+  line-height: 100%;
+  color: #312e2c;
+}
+
+.text-preset-2 {
+  font-family: "Young-Serif-Regular";
+  letter-spacing: 0;
+  font-size: 28px;
+  line-height: 100%;
+}
+.text-preset-3 {
+  font-family: "Oufit";
+  font-weight: 600;
+  letter-spacing: 0;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.text-preset-4 {
+  font-family: "Oufit";
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.text-preset-4-bold {
+  font-family: "Oufit";
+  font-weight: 700;
+  letter-spacing: 0;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--stone-100);
+}
+
+.container {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  width: 736px;
+  height: 1700px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.image-recipe {
+  align-self: center;
+  border-radius: 12px;
+  /* width: 656px; */
+  height: 300px;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.bottonSection {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  && h1 {
+    color: var(--stone-900);
+    margin: 0;
+  }
+  && p {
+    color: var(--stone-600);
+    margin: 0;
+  }
+}
+
+.preparation-section {
+  height: 172px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: var(--rose-50);
+  border-radius: 12px;
+  && h4 {
+    color: var(--rose-800);
+    padding-bottom: 15px;
+    margin: 0;
+  }
+  && ul {
+    color: var(--stone-600);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  && ul li::before {
+    content: "\2022";
+    color: var(--rose-800);
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    height: 1.5rem;
+    padding-right: 1rem;
+    padding-bottom: 8px;
+  }
+}
+
+.ingrediends-section {
+  && h3 {
+    color: var(--brown-800);
+    margin: 0;
+    padding-bottom: 24px;
+  }
+  && ul {
+    color: var(--stone-600);
+    list-style: none;
+    padding: 0 0 0 8px;
+    margin: 0;
+  }
+  && ul li:last-child {
+    height: 48px;
+  }
+  && ul li::before {
+    list-style-position: outside;
+    content: "\2022";
+    color: var(--brown-800);
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    width: 16px;
+    height: 24px;
+  }
+}
+.instructions-section {
+  width: 656px;
+  height: 332px;
+  margin: 0;
+
+  && h3 {
+    color: var(--brown-800);
+    padding-bottom: 24px;
+    margin: 0;
+  }
+  && ol {
+    color: var(--stone-600);
+    padding: 0 0 0 02rem;
+    height: 280px;
+    margin: 0;
+  }
+  && ol li::marker {
+    color: var(--brown-800);
+    font-family: "Oufit";
+    font-weight: 700;
+    font-size: 18.2px;
+  }
+  && ol li {
+    padding-left: 1rem;
+    margin: 0 0 8px 0;
+  }
+  && ol li:last-child {
+    margin: 0 0 0 0;
+  }
+}
+
+.nutrition-section {
+  height: 268px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  && h3 {
+    color: var(--brown-800);
+    margin: 0;
+  }
+  && span {
+    color: var(--stone-600);
+  }
+  && table {
+    width: 656px;
+    height: 168px;
+    border-collapse: collapse;
+  }
+}
+
+.nutrition-section tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%); /* Cor da borda (exemplo) */
+}
+
+.nutrition-section tr:last-child {
+  border-bottom: none;
+}
+
+.item-table {
+  color: var(--stone-600);
+  padding-left: 32px;
+  width: 288px;
+}
+.value-table {
+  color: var(--brown-800);
+}
+
+.divider {
+  width: 656px;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 616px;
+    height: 1844px;
+  }
+
+  .title-text {
+    height: 136px;
+  }
+
+  .ingrediends-section {
+    width: 536px;
+    height: 204px;
+  }
+
+  .instructions-section {
+    width: 536;
+    height: 426px;
+  }
+
+  .instructions-section,
+  .divider {
+    width: 100%;
+  }
+
+  .nutrition-section {
+    height: 292px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    margin: 0px;
+    padding: 0;
+  }
+
+  .container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 40px;
+    border-radius: 0px;
+  }
+
+  .image-recipe {
+    height: 171px;
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .bottonSection {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .title-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    && h1 {
+      color: var(--stone-900);
+      margin: 0;
+    }
+    && p {
+      color: var(--stone-600);
+      margin: 0;
+    }
+  }
+
+  .preparation-section {
+    && h4 {
+      color: var(--rose-800);
+      padding-bottom: 15px;
+      margin: 0;
+    }
+    && ul {
+      color: var(--stone-600);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    && ul li::before {
+      content: "\2022";
+      color: var(--rose-800);
+      font-weight: bold;
+      display: inline-block;
+      width: 1rem;
+      height: 1.5rem;
+      padding-right: 1rem;
+      padding-bottom: 8px;
+    }
+  }
+
+  .bottonSection {
+    padding: 0 32px;
+  }
+
+  .preparation-section {
+    height: 196px;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 12px;
+  }
+
+  .ingrediends-section {
+    max-width: 311px;
+    height: 228px;
+  }
+
+  .instructions-section {
+    width: 311px;
+    height: 668px;
+  }
+
+  .instructions-section,
+  .divider {
+    width: 100%;
+  }
+
+  .nutrition-section {
+    width: 311px;
+    height: 292px;
+    && table {
+      height: 168px;
+    }
+  }
+
+  .item-table {
+    padding-left: 60px;
+    width: 120px;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
