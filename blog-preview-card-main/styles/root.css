@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --yellow: #f4d04e;
+  --gray-950: #111111;
+  --gray-500: #6b6b6b;
+  --white: #ffffff;
+}
+
+/* fonts Figtree*/
+/* Figtree Extra Bold */
+.text-preset-1 {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-style: normal;
+}
+
+/* Figtree Medium 16px*/
+.text-preset-2 {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  font-style: normal;
+}
+
+/* Figtree Medium 14px */
+.text-preset-3 {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-style: normal;
+}
+/* Figtree Medium 14px bold */
+.text-preset-3-bold {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-style: normal;
+}

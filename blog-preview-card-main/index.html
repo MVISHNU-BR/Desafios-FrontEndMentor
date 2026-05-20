@@ -11,53 +11,43 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="styles/styles.css" />
 
     <title>Frontend Mentor | Blog preview card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 0.6875rem;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
-  <body>
-    <main class="container">
-      <div class="content">
+  <body class="container">
+    <main class="content">
+      <img
+        class="top-card-image"
+        src="assets/images/illustration-article.svg"
+        alt="ilustration abstract for article"
+      />
+      <div class="text-container">
+        <h2 class="text-preset-3-bold">Learning</h2>
+
+        <span class="text-preset-3">Published 21 Dec 2023</span>
+
+        <a href="#">
+          <h1 class="text-preset-1">HTML & CSS foundations</h1>
+        </a>
+
+        <p class="text-preset-2">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </div>
+      <div class="author-container">
         <img
-          src="assets/images/illustration-article.svg"
-          alt="ilustration abstract for article"
+          src="assets/images/image-avatar.webp"
+          alt="picture of Greg hooper white background"
         />
-        <div class="text-container">
-          <h2 class="">Learning</h2>
-
-          <span class="">Published 21 Dec 2023</span>
-
-          <h1 class="">HTML & CSS foundations</h1>
-
-          <p class="">
-            These languages are the backbone of every website, defining
-            structure, content, and presentation.
-          </p>
-        </div>
-        <div class="author-container">
-          <img
-            src="assets/images/image-avatar.webp"
-            alt="picture of Greg hooper white background"
-          />
-          <span>Greg Hooper</span>
-        </div>
+        <span class="text-preset-3-bold">Greg Hooper</span>
       </div>
     </main>
-
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Mahavishnu Jneesh</a>.
+      Coded by <a href="https://github.com/MVISHNU-BR">Mahavishnu Jneesh</a>.
     </footer>
   </body>
 </html>
